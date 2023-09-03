@@ -89,4 +89,24 @@ button{
     background-color: #2faafc; /*Carrot*/
    
     color: white;
-   }
+}
+
+.arts{
+    width: 100%;
+    height: 1024px;
+    background-color: #2faafc;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    
+}
+
+.arts .container{
+    width: 45%;
+    height: 400px;
+    background-color: black;
+    margin: 5px;
+    position: relative;
+}
+
+
