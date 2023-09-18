@@ -70,7 +70,7 @@ ul.navbar a{
     color: #f1f1f1;
 }
 
-button{
+.banner .button{
     display: inline-block;
     width: 25%;
     height: 60px;
@@ -91,22 +91,295 @@ button{
     color: white;
 }
 
-.arts{
+header{
     width: 100%;
-    height: 1024px;
-    background-color: #2faafc;
+    height: 100px;
+    background-color: #000000;
+    text-align: center;
+    line-height: 130px;
+    font-size: 40px;
+    color: #f1f1f1;
+}
+
+.arts-1{
+    width: 100%;
+    height: 512px;
+    background-color: #000000;
     padding: 0;
     margin: 0;
-    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container{
+    width: 50%;
+    height: 400px;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+    margin: 5px;
+    opacity: 85%;
+}
+
+.arts-2{
+    width: 100%;
+    height: 512px;
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     
 }
 
-.arts .container{
-    width: 45%;
-    height: 400px;
-    background-color: black;
-    margin: 5px;
-    position: relative;
+.container{
+    display: flex;
+    justify-content: space-around;
 }
 
+.arts-1 .container:nth-child(1) .foto1{
+    width: 300px;
+    height: 300px;
+    background-image: url("isikliGece.jpg");
+    background-size: cover;
+    margin-top: 50px;
+    border-radius: 30px;
+   
+} 
 
+.container .explanation{
+    width: 200px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.container h1{
+    color: #121212;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.container p{
+    color: #121212;
+    padding: 10px;
+}
+
+.arts-1 .container:nth-child(2) .foto2{
+    width: 300px;
+    height: 310px;
+    background-image: url("irisler.jpg");
+    background-size: cover;
+    margin-top: 40px;
+    border-radius: 30px;
+   
+} 
+
+.arts-2 .container:nth-child(1) .foto3{
+    width: 300px;
+    height: 310px;
+    background-image: url("aycicekliVazo.jpg");
+    background-size: cover;
+    margin-top: 40px;
+    border-radius: 30px;
+} 
+
+.arts-2 .container:nth-child(2) .foto4{
+    width: 300px;
+    height: 310px;
+    background-image: url("arlesteKirmiziBag.jpeg");
+    background-size: cover;
+    margin-top: 40px;
+    border-radius: 30px;
+} 
+
+.contact{
+    width: 100%;
+    height: 926px;
+    background-image: url("vangogh-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.contact h2{
+    margin-top: 100px;
+    color: #f1f1f1;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.contact .inputs{
+    width: 70%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact .inputs input.name, input.mail{
+    width: 70%;
+    height: 70px;
+    border-radius: 30px;
+    border-style: double;
+    border-bottom: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-indent: 30px;
+    flex-grow: 1;
+}
+
+.contact .inputs .message{
+    width: 70%;
+    height: 300px;
+    border-radius: 30px;
+    border-style: double;
+    border-bottom: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-indent: 30px;
+    line-height: 0.8;
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+.contact .inputs input:focus{
+    border: 2px solid rgb(23, 101, 136) ;
+}
+
+.contact .inputs input[type=text]{
+    color: gray;
+    font-size: 20px;
+} 
+
+.contact .inputs input:focus{
+    color: black;
+}
+
+.contact .inputs button{
+    width: 25%;
+    height: 60px;
+    margin-top: 50px;
+    font-size: 25px;
+    background-color: #83ceff;
+    border: none;
+    border-radius: 20em;
+    color: #f1f1f1;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.contact .inputs button:hover {
+
+    background-color: #2faafc; /*Carrot*/
+   
+    color: white;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    margin-bottom: 0;
+    background-color: #000000;
+    color: white;
+    position: absolute;
+}
+
+footer img{
+    padding-left: 5%;
+    padding-right: 1%;
+    border-radius: 100%;
+    
+}
+
+footer .personality{
+    width: 57%;
+    height: 150px;
+}
+footer .personality p.name{
+    padding-top: 45px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+footer p.birthday{
+    text-align: left;
+}
+
+footer .museum-info{
+    width: 25%;
+    height: 50px;
+    text-align: end;
+    margin-top: 40px;
+}
+
+.museum-info a{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 725px){
+    
+    .contact .inputs{
+        width: 70%;
+        height: 300px;
+        flex-direction: row;
+    }
+
+    .contact .inputs input.name{
+        width: 30%;
+        height: 50px;
+        padding-right: 5%;
+        position: relative;
+        flex-grow: 2;
+        
+    }
+
+    .contact .inputs input.mail{
+        width: 40%;
+        height: 50px;
+        position: relative;
+        float: right;
+        flex-grow: 4;
+        margin-left: 10px;
+        
+        
+    }
+
+    .contact .inputs .message{
+        height: 150px;
+        position: absolute;
+        margin-top: 300px;
+    }
+
+    .banner .button{
+        font-size: 16px;
+    }
+
+    .inputs button.send{
+        position: absolute;
+        margin: 0;
+        margin-top: 600px;
+        font-size: 16px;
+    }
+
+    footer .museum-info{
+        text-align: end;
+        margin-right: 5%;
+    }
+
+    .arts-1, .arts-2 {
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+}
